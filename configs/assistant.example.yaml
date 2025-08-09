@@ -1,0 +1,13 @@
+model_name_or_path: TinyLlama/TinyLlama-1.1B-Chat-v1.0
+use_4bit: false
+device_map: auto
+memory_turns: 16
+system_prompt: |
+  You are AcmeCorp Assistant. Be concise, safe, and helpful. If unsure, ask clarifying questions.
+
+generation:
+  max_new_tokens: 512
+  temperature: 0.7
+  top_p: 0.95
+  repetition_penalty: 1.1
+  do_sample: true
